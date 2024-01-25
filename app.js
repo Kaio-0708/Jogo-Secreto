@@ -10,7 +10,7 @@ while ( chute != numeroSecreto) {
     chute =  prompt(`escolha um número entre 1 e ${numeroMaximo}`);
     numerosDigitados.push(chute);
 
-    alert(`Números digitados até agora: ${numerosDigitados.join(', ')}`);
+    alert(`Números digitados até agora: ${numerosDigitados.map(Number).join(', ')}`);
 
    
     if (chute == numeroSecreto) {
