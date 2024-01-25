@@ -4,11 +4,15 @@ let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
-
+let numerosDigitados = [];
 
 while ( chute != numeroSecreto) {
     chute =  prompt(`escolha um número entre 1 e ${numeroMaximo}`);
+    numerosDigitados.push(chute);
 
+    alert(`Números digitados até agora: ${numerosDigitados.join(', ')}`);
+
+   
     if (chute == numeroSecreto) {
        break;
     }  else {
@@ -39,4 +43,10 @@ if(tentativas > 1){
     alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
    } 
 */
+
+
+let numerosDigitadosStr = numerosDigitados.join(', ');
+alert(`Números digitados: ${numerosDigitadosStr}`);
+
+alert(`Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
 
