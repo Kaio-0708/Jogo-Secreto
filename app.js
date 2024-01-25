@@ -32,7 +32,7 @@ while ( chute != numeroSecreto) {
 
 
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-    alert(`Isso ai! você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);   
+ 
 
 
 /* modo díficil da etapa de cima
@@ -48,5 +48,5 @@ if(tentativas > 1){
 let numerosDigitadosStr = numerosDigitados.join(', ');
 alert(`Números digitados: ${numerosDigitadosStr}`);
 
-alert(`Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
+alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
 
