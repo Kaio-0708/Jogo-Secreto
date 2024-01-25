@@ -45,7 +45,7 @@ if(tentativas > 1){
 */
 
 
-let numerosDigitadosStr = numerosDigitados.join(', ');
+let numerosDigitadosStr = numerosDigitados.map(Number).join(', ');
 alert(`Números digitados: ${numerosDigitadosStr}`);
 
 alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
