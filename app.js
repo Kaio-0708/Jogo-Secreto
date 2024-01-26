@@ -8,9 +8,12 @@ let numerosDigitados = [];
 
 while ( chute != numeroSecreto) {
     chute =  prompt(`escolha um número entre 1 e ${numeroMaximo}`);
-    numerosDigitados.push(chute);
 
-    alert(`Números digitados até agora: ${numerosDigitados.map(Number).join(', ')}`);
+      if (!isNaN(chute)) {
+        numerosDigitados.push(Number(chute));
+      }
+
+    alert(`Números digitados até agora: ${numerosDigitados.join(', ')}`);
 
    
     if (chute == numeroSecreto) {
@@ -45,7 +48,7 @@ if(tentativas > 1){
 */
 
 
-let numerosDigitadosStr = numerosDigitados.map(Number).join(', ');
+let numerosDigitadosStr = numerosDigitados.join(', ');
 alert(`Números digitados: ${numerosDigitadosStr}`);
 
 alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
