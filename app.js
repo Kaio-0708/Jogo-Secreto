@@ -8,11 +8,8 @@ let numerosDigitados = [];
 
 while ( chute != numeroSecreto) {
     chute =  prompt(`escolha um número entre 1 e ${numeroMaximo}`);
-
-      if (!isNaN(chute)) {
-        numerosDigitados.push(Number(chute));
-      }
-
+     numerosDigitados.push(chute);
+   
     alert(`Números digitados até agora: ${numerosDigitados.join(', ')}`);
 
    
